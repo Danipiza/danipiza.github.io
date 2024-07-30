@@ -1,0 +1,105 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Disponibilidad.astro';
+import SocialConstructor from '../components/SocialConstructor.astro';
+
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+import MailIcon from '../components/icons/Mail.astro'
+import Experience from '../components/Experiencia.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import BriefCase from '../components/icons/BriefCase.astro';
+import CodeIcon from '../components/Code.astro';
+import Projects from '../components/Projects.astro';
+
+import AboutMe from '../components/AboutMe.astro';
+import ProfileCheck from '../components/icons/ProfileCheck.astro';
+
+
+---
+
+<!-- 
+in the astro folder execute: 
+> npm start 
+-->
+ 
+<Layout 
+	title="Daniel Pizarro - Portfolio" 
+	description="Contrata a daniel para tu empresa"
+>
+	<!-- TODO TITULO Y DESCPRIPCION -->
+	<main class="px-4">
+		<!--<section class="w-full mx-auto lg:w-[740px] py-44"> -->		
+		<SectionContainer class="py-44 pb-32" >
+			<img
+				class="rounded-full size-12 mb-4"
+				src="https://avatars.githubusercontent.com/u/98972125?v=4&size=64"
+				alt="dani photo"
+			/>
+			<!--responsive lg:... -->
+			<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-5"> 
+				Hola, soy Dani 
+				<a 
+				href="https://www.linkedin.com/in/daniel-pizarro-gallego-2750a22a5/" 
+				target="_blank"
+				rel="noopener"
+				class="flex justify-center items-center"> <Badge>Disponible para trabajar</Badge></a> 
+			</h1>			
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700]"> 				
+				<span> Recientemente culminé mi etapa universitaria,</span>
+				<span> quedando pendiente únicamente la defensa de mi Trabajo de Fin de Grado en septiembre. Soy</span>
+				<span class="text-yellow-100"> Ingeniero Informático</span><span> con especialización en computación y algoritmos. Vivo en </span>
+				<span class="text-red-300/90"> Madrid, España</span>
+				<span>, y me he focalizado en el</span>	<span class="text-yellow-100"> desarrollo de algoritmos y la inteligencia artificial. </span>				
+			</h2>
+			
+
+			<nav class="flex gap-4 mt-6 flex-wrap">
+				<SocialConstructor href="https://www.linkedin.com/in/daniel-pizarro-gallego-2750a22a5/"> 
+					<LinkedInIcon class="size-4 lg:size-6"/> <!-- igual que usar -w6 -h6-->
+					LinkedIn
+				</SocialConstructor>
+				<SocialConstructor href="https://github.com/Danipiza"> 
+					<GitHubIcon class="size-4 lg:size-6"/>
+					GitHub
+				</SocialConstructor>
+				<SocialConstructor href="mailto:dpizarrogallego@gmail.com"> 
+					<MailIcon class="size-4 lg:size-6"/>
+					dpizarrogallego@gmail.com
+				</SocialConstructor>
+			</nav>			
+		</SectionContainer>
+
+		<SectionContainer id="experiencia">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center"> 
+				<BriefCase class="size-7"/>
+				Experiencia Laboral y Estudios
+			</h2>
+			
+			<Experience/>
+		<SectionContainer>
+		<!-- </section> -->
+
+
+		<SectionContainer id="proyectos">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center"> 
+				<CodeIcon class="size-7"/>
+				Proyectos
+			</h2>
+			
+			<Projects/>
+		<SectionContainer>
+		
+		<SectionContainer id="sobre-mi">
+			<h2
+				class="text-3xl font-semibold mb-6 mt-10 flex gap-x-2 items-center"
+			>
+				<ProfileCheck class="size-7" />
+				Sobre mí
+			</h2>
+			<AboutMe />
+			</SectionContainer>
+		
+
+	</main>
+</Layout>
