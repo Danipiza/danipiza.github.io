@@ -2,6 +2,10 @@ import { defineConfig } from 'astro/config';
 
 import tailwind from "@astrojs/tailwind";
 
+import { defineConfig } from "astro/config";
+import astroI18next from "astro-i18next";
+
+
 const SERVER_PORT = 3000;
 const LOCAL_HOST_URL = `http://localhost:${SERVER_PORT}/`
 
@@ -21,5 +25,9 @@ if(isBuild){
 export default defineConfig({  
   server: { port: SERVER_PORT },
   site: BASE_URL,
-  integrations: [tailwind()]
+  i18n: {
+    defaultLocale: 'es',
+    locales: ['es','en']
+  },
+  integrations: [tailwind()]  // , astroI18next()              
 });

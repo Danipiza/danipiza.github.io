@@ -15,7 +15,8 @@
     "@fontsource-variable/onest": "^5.0.4",
     "@fontsource/onest": "^5.0.4",
     "@fontsource/twinkle-star": "^5.0.20",
-    "astro": "^4.12.2",
+    "astro": "^4.13.3",
+    "astro-i18next": "^1.0.0-beta.21",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.5.3"
   }

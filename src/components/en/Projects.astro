@@ -1,0 +1,101 @@
+---
+import GitHub from "../icons/GitHub.astro"
+import NextJs from "../icons/NextJs.astro"
+import Python from "../icons/Python.astro"
+
+/*import Link from "./icons/Link.astro"*/
+import LinkButton from "../LinkButton.astro"
+
+const TAGS = {
+    NEXT: {
+        name: "Next.js",
+        class: "bg-custom-next text-white ",
+        icon: NextJs,
+    },
+    PYTHON: {
+        name: "Python",
+        class: "bg-custom-next text-white ",
+        icon: Python,
+    },
+
+}
+
+const PROJECTS = [
+    {
+        title: 'TFG - MPAI-Boost',
+        description: 'Final Degree Project developed in the 2023-2024 academic year. It consists of optimizing AI algorithms by applying techniques focused on high-performance computing (MPI).',
+        link: 'https://github.com/Danipiza/TFG',
+        github: 'https://github.com/Danipiza/TFG',
+        image: '/tfg.png',
+        tags: [TAGS.PYTHON]
+    },
+    {
+        title: 'Games-AI',
+        description: 'This repository features implementations of Artificial Intelligence that tackle well-known games using Deep Q-Networks (DQN). The AI trains within each game environment for a specified duration. Throughout this training process, the AI accumulates experiences that refine and adjust the neural network to successfully achieve the goals set by the game\'s environment.',
+        link: 'https://github.com/Danipiza/Games-AI',
+        github: 'https://github.com/Danipiza/Games-AI',
+        image: '/Games_AI.webp',
+        tags: [TAGS.PYTHON]
+    },
+    {
+        title: 'UCM',
+        description: 'A repository containing all the techniques and projects created during my time at Complutense University of Madrid.',
+        link: 'https://github.com/Danipiza/UCM',
+        github: 'https://github.com/Danipiza/UCM',
+        image: '/ucm.webp',
+    },
+]
+---
+
+<style>
+    .bg-custom-next {
+        background-color: rgba(46, 41, 43, 0.8);
+    }
+</style>
+
+{PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    <article>
+        <h3 class="text-2xl font-semibold text-yellow-100 mb-2">{title}</h3>
+        <p class="text-lg mb-3 text-pretty">{description}</p>
+        {tags && tags.length > 0 && (
+            <ul class="flex mb-3 gap-x-3 flex-row">
+                {tags.map((tag) => (
+                    <li>
+                        {typeof tag === 'string' ? (
+                            <span class="flex items-center justify-center gap-x-2 rounded-full text-sm py-1 px-2">{tag}</span>
+                        ) : (
+                            <span class={`flex items-center justify-center gap-x-2 rounded-full text-xl ${tag.class} py-1 px-2`}>
+                                <tag.icon class="size-8" />
+                                {tag.name}
+                            </span>
+                        )}
+                    </li>
+                ))}
+            </ul>
+        )}
+        <img
+            class="rounded shadow-2xl shadow-white/20"
+            src={image}
+            alt={`Screenshot of the project ${title}`} />
+        <footer class="flex items-end justify-start mb-7 mt-4 gap-x-4">
+            {github && (
+                <LinkButton href={github}>
+                    <GitHub class="size-6" />
+                    Repositorio
+                </LinkButton>
+            )}
+        </footer>
+    </article>
+))}
+
+
+
+<!--
+{link && (
+    <LinkButton href={link}>
+    <Link class="size-4" />
+    Preview
+    </LinkButton>
+)}
+
+-->

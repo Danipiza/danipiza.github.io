@@ -2,8 +2,8 @@
 /*import '@fontsource/twinkle-star';*/
 import '@fontsource-variable/onest';
 
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Header from '../../components/es/Header.astro';
+import Footer from '../../components/es/Footer.astro';
 
 
 interface Props {
@@ -12,6 +12,8 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+
+const { currentLocale } = Astro
 ---
 
 <!doctype html>
