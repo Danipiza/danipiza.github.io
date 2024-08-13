@@ -1,0 +1,9 @@
+THANKS FOR HIS YOUTUBE VIDEO "How to deploy Astro site to Github Pages"
+https://www.youtube.com/watch?v=Rwga14F9z0k&ab_channel=Pentacode
+https://github.com/yongzhihuang
+
+ASTRO DOCUMENTATION:
+https://docs.astro.build/en/guides/deploy/github/
+
+CODE IMAGE GENERATOR:
+https://www.ray.so/
