@@ -5,6 +5,12 @@
 This repository contains the Astro project created for my portfolio. Uses a _github action workflow_ so the website is updated everytime I commit a change after modifying locally.
 :-----
 
+## INDEX
+1. [WHAT is a Portfolio](#what-is-a-portfolio)
+2. [HOW to install and run](#how-to-install-and-run)
+3. [HOW to deploy a website](#how-to-deploy-a-website-using-github-pages-and-astro)
+4. [HOW to create an Astro project](#how-to-create-an-astro-project)
+
 ## WHAT is a Portfolio
 
 A tech portfolio is a specialized type of portfolio that focuses on showcasing skills, projects, and achievements in the technology field. It's particularly important for tech professionals like software developers, engineers, data scientists... . Here's what a tech portfolio typically includes:
@@ -25,6 +31,7 @@ npm install @fontsource/twinkle-star
 
 ### Running
 ```npm start``` and visit [local host](http://localhost:3000/)
+
 ![local_run](https://github.com/Danipiza/danipiza.github.io/blob/main/readme_images/local_run.gif)
 
 ### Updating and avoiding errors
@@ -50,7 +57,7 @@ Create a new file in your project at ```astro.config.mjs```. Here is my [code](h
 
 
 
-### Create an Astro project
+## HOW to create an Astro project
 1. Create a folder with the name of the project.
 2. run ```npm create astro@latest```
 3. Follow the instructions in the terminal

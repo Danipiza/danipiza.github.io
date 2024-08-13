@@ -5,6 +5,12 @@
 Este repositorio contiene el proyecto Astro creado para mi portafolio. Usa _github action workflow_ para que la página web este actualizada todo el tiempo que hago un _commit_ despues de modificarlo localmente.
 :-----
 
+## INDEX
+1. [QUÉ es un Portafolio](#qué-es-un-portafolio)
+2. [CÓMO instalar y ejecutar](#cómo-instalar-y-ejecutar)
+3. [CÓMO desplegar un sitio web](#cómo-desplegar-un-sitio-web-usando-github-pages-y-astro)
+4. [CÓMO crear un proyecto Astro](#cómo-crear-un-proyecto-astro)
+
 ## QUÉ es un Portafolio
 
 Un portafolio tecnológico es un tipo de portafolio especializado que se centra en mostrar habilidades, proyectos y logros en el campo tecnológico. Es particilarmente importante para los fp
@@ -52,7 +58,7 @@ Crea un nuevo archivo en ty proyecto en ```astro.config.mjs```. Aquí está mi [
 
 
 
-### Crear un proyecto Astro
+### CÓMO crear un proyecto Astro
 1. Crea una carpeta con el nombre del proyecto.
 2. Ejecuta ```npm create astro@latest```
 3. Sigue las intrucciones de la terminal
