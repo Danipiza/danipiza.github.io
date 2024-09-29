@@ -1,7 +1,12 @@
 ---
 import GitHub from "../icons/GitHub.astro"
+
 import NextJs from "../icons/NextJs.astro"
 import Python from "../icons/Python.astro"
+import PyTorch from "../icons/PyTorch.astro"
+import Keras from "../icons/Keras.astro"
+import TensorFlow from "../icons/TensorFlow.astro"
+import C_sharp from "../icons/C_sharp.astro"
 
 /*import Link from "./icons/Link.astro"*/
 import LinkButton from "../LinkButton.astro"
@@ -17,10 +22,37 @@ const TAGS = {
         class: "bg-custom-next text-white ",
         icon: Python,
     },
-
+    PYTORCH: {
+        name: "PyTorch",
+        class: "bg-custom-next text-white ",
+        icon: PyTorch,
+    },
+    KERAS: {
+        name: "Keras",
+        class: "bg-custom-next text-white ",
+        icon: Keras,
+    },
+    TENSORFLOW: {
+        name: "TensorFlow",
+        class: "bg-custom-next text-white ",
+        icon: TensorFlow,
+    },
+    CSHARP: {
+        name: "C_sharp",
+        class: "bg-custom-next text-white ",
+        icon: C_sharp,
+    },
 }
 
 const PROJECTS = [
+    {
+        title: 'ReCode-AI',
+        description: 'This repository features implementations of Artificial Intelligence in several techniques; Machine Learning, Deep Learning, Natural Language Processing or Computer vision. The implementations are made in Python and C#, from scratch and using well known libraries like PyTorch, Keras o TensorFlow.',
+        link: 'https://github.com/Danipiza/ReCode-AI/',
+        github: 'https://github.com/Danipiza/ReCode-AI/',
+        image: '/ReCode-AI.png',
+        tags: [TAGS.PYTHON,TAGS.PYTORCH,TAGS.KERAS,TAGS.TENSORFLOW,TAGS.CSHARP]
+    },
     {
         title: 'TFG - MPAI-Boost',
         description: 'Final Degree Project developed in the 2023-2024 academic year. It consists of optimizing AI algorithms by applying techniques focused on high-performance computing (MPI). Final grade obtained: 9.5',

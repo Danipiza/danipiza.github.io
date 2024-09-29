@@ -1,0 +1,17 @@
+Image:
+https://ashokveda.com/what-is-ai-technique
+
+PyTorch:
+https://commons.wikimedia.org/wiki/File:PyTorch_logo_icon.svg
+
+TensorFlow:
+https://commons.wikimedia.org/wiki/File:Tensorflow_logo.svg
+
+Keras:
+https://es.m.wikipedia.org/wiki/Archivo:Keras_logo.svg
+
+Pyhton:
+https://en.m.wikipedia.org/wiki/File:Python-logo-notext.svg
+
+C#:
+https://iconduck.com/icons/27153/c-sharp-c
